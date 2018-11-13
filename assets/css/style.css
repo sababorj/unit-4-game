@@ -1,0 +1,67 @@
+body {
+    background-image: url("http://chiconstpoets.com/wp-content/uploads/2018/04/light-blue-pattern-wallpaper-pale-blue-subtle-seamless-background-wallpaper-pattern-stock-vector-light-blue-wallpaper-designs.jpg");
+}
+
+header,  section, div {
+    float: left;
+    clear: both;
+    margin: 5px;
+    font-weight: bold;
+}
+
+header {
+    background-color: darkorange;
+    color: white;
+    font-size: 36px;
+    padding: 20px 2px 20px 10px;
+}
+
+section {
+    background-color: lightgoldenrodyellow;
+    color: green;
+    padding: 20px 2px 20px 10px;
+    width: 50%;
+    font-size: 18px
+}
+
+p{
+    padding: 0 0 20px 0;
+}
+span{
+    background-color: rgb(166, 238, 144) ;
+    color: black;
+    font-size: 36px;
+    padding: 20px 2px 20px 10px;
+    float: left;
+    margin: 5px 2.5px 5px, 5px;
+    height: 73px;
+    width: 250px;
+}
+aside{
+    background-color: skyblue;
+    color: rgb(0, 0, 0);
+    padding: 20px 2px 20px 5px;
+    float: right;
+    margin: 5px 2.5px 5px, 5px;
+    height: 73px;
+    position: relative;
+    left: 5px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.score-sec{
+    background-color: teal;
+    color: white;
+    width: 30%;
+    padding: 5px 5px 5px 10px;
+}
+
+#total-score{
+    background-color: teal;
+    color: white;
+    width: 30%;
+    font-size: 36px;
+    padding: 7px 5px 40px 10px;
+}

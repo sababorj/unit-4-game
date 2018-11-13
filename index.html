@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        CrystalsCollerctor!
+    </header>
+    <section class="container">
+        <div>
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+                total score.</p>
+            <p>you win the game by matching your total score to a random number. You lose the game if your total score
+                goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the value of each crystal.</p>
+        </div>
+    </section>
+    <div>
+        <span id="Random-Number">
+            X
+        </span>
+        <aside id="result-box">
+            <p id="w-l"> -</p>
+            <p>Wins: <strong id="win">0</strong></p>
+            <p>Loses: <strong id="lose">0</strong></p>
+            </span>
+    </div>
+    <div id="crystals">
+        <img src="assets/images/Pink-Dimond.jpg" class="crystal" id="1">
+        <img src="assets/images/Blue-Dimond.jpg" class="crystal" id="2">
+        <img src="assets/images/Yellow-Dimond.png" class="crystal" id="3">
+        <img src="assets/images/Green-Dimond.png" class="crystal" id="4">
+    </div>
+    <div class="score-sec">
+        your total score is:
+    </div>
+    <div id="total-score">0</div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
