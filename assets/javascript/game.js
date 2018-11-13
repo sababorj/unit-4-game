@@ -35,18 +35,20 @@ $(document).ready(function () {
         // check the win or lose condition
          // check the win or lose condition
          if (totalScore === CG || totalScore > CG) {
+            var winOrLose = $("<p id='winOrLose'>");
+            $("#result-box").append(winOrLose);
             //win situation
             if (totalScore === CG) {
                 win++;
                 $("#win").text(win);
-                $("#w-l").text("You Win!!");
+                $("#winOrLose").text("You Win!!");
                 totalScore = 0;
                 $("#total-score").text(totalScore);
             } else {
                 //lose situation
                 lose++;
                 $("#lose").text(lose);
-                $("#w-l").text("You lost!!");
+                $("#winOrLose").text("You lost!!");
                 totalScore = 0;
                 $("#total-score").text(totalScore);
             }
