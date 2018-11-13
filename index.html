@@ -8,42 +8,73 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        CrystalsCollector!
-    </header>
-    <section class="container">
-        <div>
-            <p>You will be given a random number at the start of the game.</p>
-            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-                total score.</p>
-            <p>you win the game by matching your total score to a random number. You lose the game if your total score
-                goes above the random number.</p>
-            <p>The value of each crystal is hidden from you until you click on it.</p>
-            <p>Each time when the game starts, the game will change the value of each crystal.</p>
+
+    <div class="row top-buffer">
+        <div class="col-md-4 left-buffer">
+            <div class="header">
+                CrystalsCollector!
+            </div>
         </div>
-    </section>
-    <div>
-        <span id="Random-Number">
-            X
-        </span>
-        <aside id="result-box">
-            <p>Wins: <strong id="win">0</strong></p>
-            <p>Loses: <strong id="lose">0</strong></p>
-            </span>
     </div>
-    <div id="crystals">
-        <img src="assets/images/Pink-Dimond.jpg" class="crystal" id="1">
-        <img src="assets/images/Blue-Dimond.jpg" class="crystal" id="2">
-        <img src="assets/images/Yellow-Dimond.png" class="crystal" id="3">
-        <img src="assets/images/Green-Dimond.png" class="crystal" id="4">
+
+    <div class="row top-buffer">
+        <div class="col-md-10 left-buffer">
+            <div class="main">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your
+                    total score.</p>
+                <p>you win the game by matching your total score to a random number. You lose the game if your total
+                    score
+                    goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the value of each crystal.</p>
+            </div>
+        </div>
     </div>
-    <div class="score-sec">
-        your total score is:
+
+    <div class="row top-buffer">
+        <div class="col-sm-2 left-buffer">
+            <div id="Random-Number">
+                X
+            </div>
+        </div>
+        <div class="col-sm-2 left-buffer">
+            <div id="result-box">
+                Wins: <strong id="win">0</strong><br>
+                Loses: <strong id="lose">0</strong>
+            </div>
+        </div>
     </div>
-    <div id="total-score">0</div>
+    <div class="row top-buffer">
+        <div class="col-md-6 left-buffer">
+            <div id="crystals">
+                <img src="assets/images/Pink-Dimond.jpg" class="crystal" id="1">
+                <img src="assets/images/Blue-Dimond.jpg" class="crystal" id="2">
+                <img src="assets/images/Yellow-Dimond.png" class="crystal" id="3">
+                <img src="assets/images/Green-Dimond.png" class="crystal" id="4">
+            </div>
+        </div>
+    </div>
+
+    <div class="row top-buffer">
+        <div class="col-md-8 left-buffer">
+            <div class="score-sec">
+                your total score is:
+            </div>
+        </div>
+    </div>
+
+    <div class="row top-buffer">
+        <div class="col-md-8 left-buffer">
+            <div id="total-score">0</div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
